@@ -45,7 +45,70 @@
     </q-drawer>
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-      <!-- drawer content -->
+      <q-input
+        class="q-ma-md"
+        placeholder="Search Qwitter"
+        outlined
+        rounded
+        dense
+      >
+        <template v-slot:prepend>
+          <q-icon name="search" />
+        </template>
+      </q-input>
+
+      <q-list separator padding>
+        <q-item class="q-pa-md">
+          <q-item-section>
+            <q-item-label class="text-grey" overline>Education</q-item-label>
+            <q-item-label class="text-weight-bold"
+              >Something amazing happened!</q-item-label
+            >
+            <q-item-label caption
+              >Secondary line text. Lorem ipsum dolor sit amet, consectetur
+              adipiscit elit.</q-item-label
+            >
+          </q-item-section>
+
+          <q-item-section side top>
+            <q-item-label caption>5 min ago</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item class="q-pa-md">
+          <q-item-section>
+            <q-item-label class="text-grey" overline>Education</q-item-label>
+            <q-item-label class="text-weight-bold"
+              >Something amazing happened!</q-item-label
+            >
+            <q-item-label caption
+              >Secondary line text. Lorem ipsum dolor sit amet, consectetur
+              adipiscit elit.</q-item-label
+            >
+          </q-item-section>
+
+          <q-item-section side top>
+            <q-item-label caption>5 min ago</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item class="q-pa-md">
+          <q-item-section>
+            <q-item-label class="text-grey" overline>Education</q-item-label>
+            <q-item-label class="text-weight-bold"
+              >Something amazing happened!</q-item-label
+            >
+            <q-item-label caption
+              >Secondary line text. Lorem ipsum dolor sit amet, consectetur
+              adipiscit elit.</q-item-label
+            >
+          </q-item-section>
+
+          <q-item-section side top>
+            <q-item-label caption>5 min ago</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
     </q-drawer>
 
     <q-page-container>
