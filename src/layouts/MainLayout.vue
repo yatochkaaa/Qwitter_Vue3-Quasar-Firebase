@@ -5,10 +5,7 @@
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title class="text-weight-bold">
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
-          </q-avatar>
-          <span class="gt-sm">Qwitter</span>
+          <span class="gt-sm">{{ $route.name }}</span>
           <q-icon
             class="header-icon lt-md q-pa-md"
             name="fa-solid fa-dove"
@@ -33,14 +30,14 @@
         color="primary"
       />
       <q-list>
-        <q-item to="/" clickable v-ripple>
+        <q-item to="/" clickable v-ripple exact>
           <q-item-section avatar>
             <q-icon name="home" size="md" />
           </q-item-section>
 
           <q-item-section class="text-h6 text-bold">Home</q-item-section>
         </q-item>
-        <q-item to="'/about'" clickable v-ripple>
+        <q-item to="/about" clickable v-ripple>
           <q-item-section avatar>
             <q-icon name="help" size="md" />
           </q-item-section>
