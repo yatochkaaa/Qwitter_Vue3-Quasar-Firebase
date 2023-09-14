@@ -8,7 +8,13 @@
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar>
-          Qwitter
+          <span class="gt-sm">Qwitter</span>
+          <q-icon
+            class="header-icon lt-md q-pa-md"
+            name="fa-solid fa-dove"
+            size="sm"
+            color="primary"
+          />
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -139,3 +145,12 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.header-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+</style>
