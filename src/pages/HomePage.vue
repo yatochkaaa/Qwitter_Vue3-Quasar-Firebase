@@ -32,6 +32,55 @@
     </div>
 
     <q-separator class="divider" size="10px" color="grey-2" />
+
+    <q-list>
+      <q-item class="q-py-md">
+        <q-item-section avatar top>
+          <q-avatar>
+            <img src="../assets/okoloDnepra200x200.jpg" />
+          </q-avatar>
+        </q-item-section>
+
+        <q-item-section>
+          <q-item-label class="text-subtitle1">
+            <strong>Volodymyr Taranin</strong>
+            <span class="text-grey-7"> @volodymyr_taranin </span>
+          </q-item-label>
+          <q-item-label class="text-body1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            enim illo hic quod molestias omnis optio voluptate, vitae alias ea
+            recusandae autem molestiae praesentium, totam possimus nulla
+            doloremque nobis ab.
+          </q-item-label>
+          <div class="qweet-icons row justify-between q-mt-sm">
+            <q-btn
+              flat
+              round
+              color="grey"
+              icon="fa-regular fa-comment"
+              size="sm"
+            />
+            <q-btn
+              flat
+              round
+              color="grey"
+              icon="fa-solid fa-retweet"
+              size="sm"
+            />
+            <q-btn
+              flat
+              round
+              color="grey"
+              icon="fa-regular fa-heart"
+              size="sm"
+            />
+            <q-btn flat round color="grey" icon="fa-solid fa-trash" size="sm" />
+          </div>
+        </q-item-section>
+
+        <q-item-section side top> 1 min ago </q-item-section>
+      </q-item>
+    </q-list>
   </q-page>
 </template>
 
@@ -62,5 +111,8 @@ export default defineComponent({
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: $grey-4;
+}
+.qweet-icons {
+  margin-left: -5px;
 }
 </style>
